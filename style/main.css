@@ -407,6 +407,10 @@ hr {
 
 /*Employment*/
 
+.employment {
+    padding-bottom: 120px;
+}
+
 .emp {
     display: flex;
     margin-top: 95px;
@@ -443,6 +447,7 @@ hr {
     padding: 15px 20px 15px 60px;
     border-bottom: 1px solid transparent;
     position: relative;
+    cursor: pointer;
 }
 
 .accordion-header:after {
@@ -450,8 +455,8 @@ hr {
     display: block;
     width: 16px;
     height: 16px;
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
     position: absolute;
     top: 50%;
     right: 20px;
@@ -481,4 +486,79 @@ hr {
     line-height: 24px;
     color: #afafaf;
     display: none;
+}
+
+/*Feedback*/
+
+.feedback {
+    background-color: #f8f8f8;
+}
+
+.fdbck {
+    width: 100%;
+    padding: 70px 110px 70px 320px;
+    position: relative;
+}
+
+.fdbck:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotate(45deg);
+    cursor: pointer;
+}
+
+.fdbck:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%) rotate(-135deg);
+    cursor: pointer;
+}
+
+.feedback-icon {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    border: 3px solid #95e1d3;
+    padding: 40px;
+}
+
+.feedback-content {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    color: #999999;
+}
+
+.sign {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    position: relative;
+    margin-left: 70px;
+}
+
+.sign:before {
+    content: "";
+    display: block;
+    background-color: #f38181;
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    left: -70px;
+    top: 50%
 }
