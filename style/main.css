@@ -257,42 +257,41 @@ hr {
 
 /*Story*/
 
-.story {
+.card {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 
-.story-item {
-    width: 380px;
+.card-item { 
     background-color: #95e1d3;
     position: relative;
 }
 
-.story-item:hover .story-image{
+.card-item:hover .card-image{
     transform: translate3d(-10px, -10px, 0);
 }
 
-.story-item:hover .story-image img {
+.card-item:hover .card-image img {
     opacity: 0.1;
 }
 
-.story-item:hover .story-item-text{
+.card-item:hover .card-item-text{
     opacity: 1;
 }
 
-.story-image {
+.card-image {
     background: linear-gradient(to bottom,
      #f38181, #fce38a);
      transition: transform .1s linear; 
 }
 
-.story-image img {
+.card-image img {
     display: block;
     transition: opacity .1s linear;
 }
 
-.story-item-text {
+.card-item-text {
     width: 100% ;
     font-size: 18px;
     font-weight: bold;
@@ -561,4 +560,19 @@ hr {
     position: absolute;
     left: -70px;
     top: 50%
+}
+
+.team {
+    margin-top: 95px;
+}
+
+.ourteam {
+    margin-top: 95px;
+    display: flex;
+}
+
+.team-item {
+    flex:1 1 0;
+    background-color:#95e1d3;
+
 }
