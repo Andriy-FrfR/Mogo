@@ -289,6 +289,11 @@ hr {
 .card-image img {
     display: block;
     transition: opacity .1s linear;
+    width: 380px;
+}
+
+.card-image.suffer img {
+    height: 470px;
 }
 
 .card-item-text {
@@ -574,5 +579,27 @@ hr {
 .team-item {
     flex:1 1 0;
     background-color:#95e1d3;
+}
 
+/*Social*/
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    background-color: #fce38a;
+    text-decoration: none;
+    color: #f38181;
+    font-size: 25px;
+    border-left: solid #f9bd87 1px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: auto auto;
+}
+
+.social-item:first-child {
+    border-left: none;
 }
