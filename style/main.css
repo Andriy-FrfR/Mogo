@@ -584,22 +584,61 @@ hr {
 /*Social*/
 
 .social {
-    display: flex;
-    justify-content: center;
+    display: table;
+    margin: 0 auto;
 }
 
 .social-item {
+    display: table-cell;
     background-color: #fce38a;
     text-decoration: none;
     color: #f38181;
     font-size: 25px;
-    border-left: solid #f9bd87 1px;
+    border-right: solid #f9bd87 1px;
     height: 55px;
     width: 55px;
     text-align: center;
-    padding: auto auto;
+    vertical-align: middle;
+    transition: color .2s linear, background-color .2s linear, border-color .2s linear;
 }
 
-.social-item:first-child {
-    border-left: none;
+.social-item:last-child {
+    border-right: none;
+}
+
+.social-item:hover {
+    background-color: #f38181;
+    color: #fff;
+    border-color: #f38181;
+}
+
+.card-item-suptitles {
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    top: 104%;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-item-subtitles {
+    font-family: 'Roboto';
+    font-style: italic;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    top: 109%;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+/*Brand*/
+
+.brand {
+    margin-top: 190px;
+    background-color: #f8f8f8;
+    height: 100px;
 }
