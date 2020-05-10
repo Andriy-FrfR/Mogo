@@ -226,7 +226,7 @@ hr {
     line-height: 24px;
     text-align: center;
     width: 940px;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 .section-header-title {
@@ -244,7 +244,7 @@ hr {
     background-color: #f38181;
     height: 3px;
     width: 60px;
-    margin: 40px auto 50px;
+    margin: 40px auto 0;
 }
 
 .section-header-suptitle {
@@ -640,3 +640,14 @@ hr {
     margin-top: 190px;
     padding: 60px 0;
 }
+
+/*Work*/
+
+.work {
+    margin-top: 105;
+}
+
+.work-item {
+    display: inline-block;
+}
+
