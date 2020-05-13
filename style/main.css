@@ -647,7 +647,55 @@ hr {
     margin-top: 105;
 }
 
-.work-item {
-    display: inline-block;
+.work-inner {
+    display: flex;
+    max-width: 100%;
+    margin-top: 100px;
 }
 
+.work-block {
+    flex: 1 1 0;
+}
+
+.work-item {
+    background: linear-gradient(to bottom,
+    #f38181, #fce38a);
+    position: relative;
+}
+
+.work-item img {
+    transition: opacity .2s linear;
+    display: block;
+    max-width: 100%;
+}
+
+.work-item:hover img {
+    opacity: 0.1;
+}
+
+.work-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.work-item:hover .work-info {
+    opacity: 1;
+}
+
+.work-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.work-text {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
