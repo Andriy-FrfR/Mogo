@@ -779,6 +779,51 @@ hr {
 .reviews-content {
     font-family: 'Roboto';
     color: #999999;
+    margin-top: 25px;
 }
 
 /*Storues*/
+
+.stories {
+    margin-top: 110px;
+}
+
+.stories-inner {
+    margin-top: 45px;
+    display: flex;
+}
+
+.stories-item {
+    flex: 1 1 0;
+}
+
+.stories-title {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stories-content {
+    color: #999999;
+    font-size: 15px;
+    font-family: 'Roboto';
+    padding: 20px 0 25px;
+    border-bottom: solid #e5e5e5 1px;
+}
+
+.stories-box {
+    position: relative;
+}
+
+.stories-box img {
+    left: 0;
+    bottom: 0;
+}
+.stories-date {
+    background-color: #95e1d3;
+    height: 70px;
+    width: 60px;
+    position: absolute;
+}
