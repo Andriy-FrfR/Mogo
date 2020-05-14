@@ -255,7 +255,7 @@ hr {
     text-align: center;
 }
 
-/*Story*/
+/*Card*/
 
 .card {
     display: flex;
@@ -676,13 +676,13 @@ hr {
     position: relative;
 }
 
-.work-item img {
+.work-item .work-img {
     transition: opacity .2s linear;
     display: block;
     max-width: 100%;
 }
 
-.work-item:hover img {
+.work-item:hover .work-img {
     opacity: 0.1;
 }
 
@@ -714,12 +714,71 @@ hr {
 }
 
 .work-icon {
-    width: 100%;
-    text-align: center;
+    display: block;
+    margin: 0 auto 18px;
 }
 
 /*Reviews*/
 
 .reviews {
     margin-top: 60px;
+    padding-top: 110px;
+    padding-bottom: 130px;
+    background: url(/images/reviews-backgound.png);
+    background-size: cover;
 }
+
+.reviews-inner {
+    margin-top: 87px;
+}
+
+.reviews-block {
+    display: flex;
+}
+
+.reviews-item {
+    flex: 1 1 0;
+    padding: 0 40px 0 180px;
+    position: relative;
+}
+
+.reviews-block:last-child {
+    margin-top: 70px;
+}
+
+.reviews-item img {
+    position: absolute;
+    left: 40px;
+}
+
+.reviews-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.reviews-work {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 15px;
+    color: #3f3f3f;
+    position: relative;
+}
+
+.reviews-work::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    background-color: #f38181;
+    top: 35px;
+}
+
+.reviews-content {
+    font-family: 'Roboto';
+    color: #999999;
+}
+
+/*Storues*/
