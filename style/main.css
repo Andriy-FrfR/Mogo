@@ -519,6 +519,11 @@ hr {
     background-color: #f8f8f8;
 }
 
+.feedback.feedback-2 {
+    margin-top: 30px;
+    background-color: #fff;
+ }
+
 .fdbck {
     width: 100%;
     padding: 70px 110px 70px 320px;
@@ -562,6 +567,12 @@ hr {
     padding: 40px;
 }
 
+.feedback-icon.second-feedback {
+    border: 0;
+    left: 70px;
+    padding: 0;
+ }
+ 
 .feedback-content {
     font-family: 'Roboto';
     font-style: italic;
@@ -587,6 +598,8 @@ hr {
     left: -70px;
     top: 50%
 }
+
+/*Team*/
 
 .team {
     margin-top: 95px;
@@ -698,4 +711,15 @@ hr {
     font-style: italic;
     font-size: 15px;
     text-align: center;
+}
+
+.work-icon {
+    width: 100%;
+    text-align: center;
+}
+
+/*Reviews*/
+
+.reviews {
+    margin-top: 60px;
 }
