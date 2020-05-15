@@ -791,10 +791,12 @@ hr {
 .stories-inner {
     margin-top: 45px;
     display: flex;
+    justify-content: space-between;
 }
 
 .stories-item {
     flex: 1 1 0;
+    max-width: 380px;
 }
 
 .stories-title {
@@ -856,3 +858,32 @@ hr {
 .stories-span-item i {
     color: #95e1d3;
 } 
+
+/*Map*/
+
+.map {
+    margin-top: 115px;
+    background: url(/images/map-background.png);
+    padding: 77px;
+}
+
+.map-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f38181;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 18px 0 22px;
+}
+
+.map-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.map-block {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto; 
+}
