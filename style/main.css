@@ -810,7 +810,6 @@ hr {
     font-size: 15px;
     font-family: 'Roboto';
     padding: 20px 0 25px;
-    border-bottom: solid #e5e5e5 1px;
 }
 
 .stories-box {
@@ -818,12 +817,42 @@ hr {
 }
 
 .stories-box img {
-    left: 0;
-    bottom: 0;
+    display: block;
 }
+
 .stories-date {
     background-color: #95e1d3;
-    height: 70px;
-    width: 60px;
+    color: #fff;
     position: absolute;
+    left: -10px;
+    bottom: 10px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+    padding: 15px;
 }
+
+.stories-date-number {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.stories-footer {
+    border-top: solid #e5e5e5 1px;
+    padding-top: 10px;
+}
+
+.stories-span-item {
+    font-family: 'Roboto';
+    font-style: Italic;
+    color: #999999;
+    font-size: 15px;
+    margin-right: 19px;
+}
+
+.stories-span-item i {
+    color: #95e1d3;
+} 
