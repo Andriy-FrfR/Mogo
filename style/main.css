@@ -895,7 +895,21 @@ hr {
 }
 
 .footer-inner {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 70px;
+}
+
+.footer-col-first {
+    width: 40%;
+}
+
+.footer-col-second {
+    width: 29%;
+}
+
+.footer-col-third {
+    width: 22%;
 }
 
 .footer-logo {
@@ -904,12 +918,20 @@ hr {
     color: #cccccc;
 }
 
+.footer-title {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
 .footer-text {
     font-family: 'Roboto';
     line-height: 24px;
     font-size: 15px;
     color: #999999;
-    margin-top: 43px;
 }
 
 .footer-social {
@@ -941,6 +963,19 @@ hr {
     color: #95e1d3;
     font-size: 16px;
     margin-left: 15px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 0;
+}
+
+.footer-copyright a {
+    color: #f38181;
+    text-decoration: none;
 }
 
 /*Subscribe*/
@@ -991,4 +1026,63 @@ hr {
 .subscribe-btn:hover {
     background-color: #74c7b8;
     transition: background-color .2s linear;
+}
+
+/*Blogs*/
+
+.blogs-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.blogs-img {
+    display: block;
+    margin-right: 20px;
+}
+
+.blogs-content {
+    padding: 21px 0 9px
+}
+
+.blogs-text {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blogs-date {
+    display: block;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 13px;
+    color: #999999;
+}
+
+/*Instagram*/
+
+.inst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inst-item {
+    width: 31.5%;
+    border-bottom: #fff 2px solid; 
+}
+
+.inst img {
+    display: block;
+}
+
+.inst-subtitle {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 13px;
+    text-decoration: none;
+
 }
