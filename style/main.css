@@ -887,3 +887,108 @@ hr {
     background-color: #f38181;
     margin: 0 auto; 
 }
+
+/*Footer*/
+
+.footer {
+    margin-top: 75px;
+}
+
+.footer-inner {
+    padding-bottom: 70px;
+}
+
+.footer-logo {
+    font-size: 46px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.footer-text {
+    font-family: 'Roboto';
+    line-height: 24px;
+    font-size: 15px;
+    color: #999999;
+    margin-top: 43px;
+}
+
+.footer-social {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer-social-header {
+    color: #333333;
+    font-size: 14px;
+    margin-top: 50px;
+    padding-bottom: 19px;
+}
+
+.font-social-header b {
+    font-size: 18px;
+}
+
+.footer-social-content {
+    font-family: 'Roboto';
+    font-style: italic;
+    color: #999999;
+    border-top: 1px solid  #e5e5e5;
+    padding-top: 16px;
+}
+
+.footer-social-content a {
+    display: inline-block;
+    color: #95e1d3;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/*Subscribe*/
+
+.subscribe {
+    width: 100%;
+    max-width: 380px;  
+    display: flex;
+}
+
+.subscribe-input {
+    width: 60%;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #ccc;
+    border: 1px solid #e7e7e7;
+    padding: 12px;
+    outline: none;
+    transition: border-color .2s linear;
+}
+
+.subscribe-input::placeholder {
+    font-family: 'Roboto';
+    font-style: italic;
+    color: #ccc;
+}
+
+.subscribe-input:focus {
+    border: 1px solid #95e1d3;
+}
+
+.subscribe-btn {
+    width: 40%;
+    background-color: #95e1d3;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    padding: 15px 33px 14px;
+    outline: none;
+}
+
+.subscribe-btn:hover {
+    background-color: #74c7b8;
+    transition: background-color .2s linear;
+}
