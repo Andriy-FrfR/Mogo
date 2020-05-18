@@ -27,7 +27,8 @@ hr {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -225,7 +226,7 @@ hr {
     color: #557c7c;
     line-height: 24px;
     text-align: center;
-    width: 940px;
+    width: 80%;
     margin: 50px auto 0;
 }
 
@@ -260,7 +261,13 @@ hr {
 .card {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 100px;
+}
+
+.aboutus .card-item {
+    background-color: #95e1d3;
+    position: relative;
 }
 
 .card-inner {
@@ -654,6 +661,18 @@ hr {
     padding: 60px 0;
 }
 
+.brand {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    flex: 1 1 0;
+    margin: auto 0;
+    text-align: center;
+}
+
 /*Work*/
 
 .work {
@@ -792,6 +811,7 @@ hr {
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .stories-item {
@@ -965,19 +985,6 @@ hr {
     margin-left: 15px;
 }
 
-.footer-copyright {
-    font-size: 14px;
-    color: #333;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
-    padding: 15px 0;
-}
-
-.footer-copyright a {
-    color: #f38181;
-    text-decoration: none;
-}
-
 /*Subscribe*/
 
 .subscribe {
@@ -1084,5 +1091,63 @@ hr {
     font-style: italic;
     font-size: 13px;
     text-decoration: none;
+}
 
+/*Copyright*/
+
+.copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 15px 0;
+}
+
+.copyright a {
+    color: #f38181;
+    text-decoration: none;
+}
+
+@media (max-width: 1230px) {
+    /*Intro*/
+    
+    .intro__title {
+        font-size: 120px;
+    }
+    .intro__suptitle {
+        font-size: 52px
+    }
+}
+
+@media (max-width: 990px) {
+    /*Intro*/
+    
+    .intro__title {
+        font-size: 80px;
+    }
+    .intro__suptitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 770px) {
+    /*Intro*/
+    
+    .intro__title {
+        font-size: 80px;
+    }
+    .intro__suptitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    /*Intro*/
+    
+    .intro__title {
+        font-size: 80px;
+    }
+    .intro__suptitle {
+        font-size: 32px;
+    }
 }
