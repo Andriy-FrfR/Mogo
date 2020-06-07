@@ -358,7 +358,7 @@ hr {
     flex: 1 1 0;
     border-left: 1px solid #b5eae0;
     color: #fff;
-    padding: 70px 25px;
+    padding: 70px;
     text-align: center;
 }
 
@@ -366,7 +366,7 @@ hr {
     border-right: 1px solid #b5eae0;
 }
 
-.count {
+.stat-count {
     font-size: 72px;
     font-weight: 700;
 }
@@ -1134,7 +1134,18 @@ hr {
 
     /*Card*/
     .card {
-        margin-top: 75px;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+
+    .card-item {
+        margin-bottom: 20px;
+    }
+
+    /*Statistics*/
+    .statistics {
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 }
 
@@ -1164,6 +1175,12 @@ hr {
         margin-top: 55px;
     }
     
+    /*Statistics*/
+    .statistics {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
     /*Services*/
     .serv-item {
         width: 50%;
@@ -1204,9 +1221,29 @@ hr {
         display: none;
     }
 
+    /*Section*/
+    .section-header-suptitle {
+        font-size: 18px;
+    }
+
+    .section-header-title {
+        font-size: 22px;
+    }
+
     /*Card*/
     .card {
         margin-top: 30px;
+    }
+
+    /*Statistics*/
+    .statistics {
+        margin-bottom: 60px;
+    }
+
+    .stat-item {
+        min-width: 50%;
+        padding: 50px;
+        border-bottom: 1px solid #b5eae0;
     }
 
     /*Services*/
@@ -1224,6 +1261,7 @@ hr {
     .serv-item img {
         left: 0;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -1242,6 +1280,43 @@ hr {
     .slider__item.active::before {
         width: 30px;
     }
+
+    /*Section*/
+    .section-header-suptitle {
+        font-size: 16px;
+    }
+
+    .section-header-title {
+        font-size: 20px;
+    }
+
+    .section-header-title::after {
+        margin-top: 20px;
+    }
+
+    .section-header-text {
+        margin-top: 25px;
+    }
+
+    /*Statistics*/
+    .statistics {
+        margin-bottom: 40px;
+    }
+
+    .stat-item {
+        min-width: 100%;
+        border: 0;
+        border-bottom: 1px solid #b5eae0;;
+        padding: 60px;
+    }
+
+    .stat-count {
+        font-size: 60px;
+    }
+
+    .stat-text {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1259,5 +1334,25 @@ hr {
     /*Slider*/
     .slider__item.active::before {
         width: 25px;
+    }
+
+    /*Statistics*/
+    .statistics {
+        margin-bottom: 40px;
+    }
+
+    .stat-item {
+        min-width: 100%;
+        border: 0;
+        border-bottom: 1px solid #b5eae0;;
+        padding: 60px;
+    }
+
+    .stat-count {
+        font-size: px;
+    }
+
+    .stat-text {
+        font-size: 12px;
     }
 }
