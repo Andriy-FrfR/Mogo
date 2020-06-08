@@ -240,7 +240,7 @@ hr {
     text-transform: uppercase;
 }
 
-.section-header-title:after {
+.section-header-title::after {
     content: "";
     display: block;
     background-color: #f38181;
@@ -321,7 +321,7 @@ hr {
     width: 380px;
 }
 
-.card-image.suffer img {
+.card-image.card-image-second img {
     height: 470px;
 }
 
@@ -358,8 +358,8 @@ hr {
     flex: 1 1 0;
     border-left: 1px solid #b5eae0;
     color: #fff;
-    padding: 70px;
-    text-align: center;
+    padding: 70px 0;
+    text-align: center; 
 }
 
 .stat-item:last-child {
@@ -1161,7 +1161,6 @@ hr {
     }
 
     /*Section*/
-
     .section-header-title::after {
         margin-top: 25px;
     }
@@ -1179,6 +1178,29 @@ hr {
     .statistics {
         margin-top: 30px;
         margin-bottom: 60px;
+    }
+
+    .stat {
+        justify-content: center;
+    }
+
+    .stat-item {
+        flex: none;
+        min-width: 33.3333%;
+        border: 0;
+        padding: 40px 0;
+    }
+
+    .stat-item:last-child {
+        border-right: 0;
+    }
+
+    .stat-count {
+        font-size: 60px;
+    }
+
+    .stat-text {
+        font-size: 12px;
     }
 
     /*Services*/
@@ -1240,12 +1262,6 @@ hr {
         margin-bottom: 60px;
     }
 
-    .stat-item {
-        min-width: 50%;
-        padding: 50px;
-        border-bottom: 1px solid #b5eae0;
-    }
-
     /*Services*/
     .serv {
         justify-content: center;
@@ -1292,22 +1308,35 @@ hr {
 
     .section-header-title::after {
         margin-top: 20px;
+        width: 50px;
     }
 
     .section-header-text {
         margin-top: 25px;
     }
 
+    /*Card*/
+    .card-image img {
+        width: 320px;
+    }
+
+    .card-image.card-image-second img {
+        height: 390px;
+    }
+    
     /*Statistics*/
     .statistics {
+        margin-top: 20px;
         margin-bottom: 40px;
     }
 
     .stat-item {
-        min-width: 100%;
-        border: 0;
+        width: 100%;
         border-bottom: 1px solid #b5eae0;;
-        padding: 60px;
+    }
+
+    .stat-item:last-child {
+        border: 0;
     }
 
     .stat-count {
@@ -1336,23 +1365,35 @@ hr {
         width: 25px;
     }
 
+    /*Section*/
+    .section-header-title::after {
+        width: 40px;
+        margin-top: 10px;
+    }
+
+    .section-header-text {
+        margin-top: 20px;
+    }
+
+    /*Card*/
+    .card-image img {
+        width: 290px;
+    }
+
+    .card-image.card-image-second img {
+        height: 360px;
+    }
+
     /*Statistics*/
     .statistics {
         margin-bottom: 40px;
     }
 
-    .stat-item {
-        min-width: 100%;
-        border: 0;
-        border-bottom: 1px solid #b5eae0;;
-        padding: 60px;
-    }
-
     .stat-count {
-        font-size: px;
+        font-size: 45px;
     }
 
     .stat-text {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
