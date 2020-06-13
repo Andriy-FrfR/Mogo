@@ -321,10 +321,6 @@ hr {
     width: 380px;
 }
 
-.card-image.card-image-second img {
-    height: 470px;
-}
-
 .card-item-text {
     width: 100% ;
     font-size: 18px;
@@ -379,7 +375,7 @@ hr {
 /*Services*/
 
 .services {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 
 .serv {
@@ -430,35 +426,37 @@ hr {
 }
 
 .dev {
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
     position: relative;
 }
 
-.image-dev {
+.image-ipad {
+    width: 92%;
+    display: block;
+}
+
+.image-iphone {
+    width: 44%;
     position: absolute;
-    right: 0;
-    bottom: -80px;
+    right: -60px;
+    bottom: -95px;
 }
 
 /*Employment*/
 
-.employment {
-    padding-bottom: 120px;
-}
-
 .emp {
     display: flex;
-    margin-top: 95px;
+    margin: 95px -15px 0;
 }
 
 .emp-item {
-    flex: 1 1 0;
+    width: 50%;
+    padding: 0 15px
 }
 
 .emp-img {
-    width: 100%;
-
+   max-width: 100%;
 }
 
 /*Accordion*/
@@ -519,7 +517,7 @@ hr {
 }
 
 .accordion-content {
-    padding: 15px 20px;
+    padding: 0 45px 15px 20px;
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 300;
@@ -527,12 +525,15 @@ hr {
     line-height: 24px;
     color: #afafaf;
     display: none;
+    overflow: auto;
+    max-height: 185px;
 }
 
 /*Feedback*/
 
 .feedback {
     background-color: #f8f8f8;
+    margin-top: 120px;
 }
 
 .feedback.feedback-2 {
@@ -1147,6 +1148,11 @@ hr {
         margin-top: 40px;
         margin-bottom: 80px;
     }
+
+    /*Brand*/
+    .brand-partners {
+        margin-top: 160px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1204,6 +1210,10 @@ hr {
     }
 
     /*Services*/
+    .services {
+        margin-bottom: 30px;
+    }
+
     .serv-item {
         width: 50%;
         padding-bottom: 0;
@@ -1211,6 +1221,16 @@ hr {
 
     .serv-item-border {
         border: 0;
+    }
+
+    /*Feedback*/
+    .feedback {
+        margin-top: 80px
+    }
+    
+    /*Brand*/
+    .brand-partners {
+        margin-top: 120px;
     }
 }
 
@@ -1263,6 +1283,10 @@ hr {
     }
 
     /*Services*/
+    .services {
+        margin-bottom: 10px;
+    }
+
     .serv {
         justify-content: center;
     }
@@ -1278,6 +1302,57 @@ hr {
         left: 0;
     }
 
+    /*Devices*/
+    .devices {
+        margin-bottom: 80px;
+        padding-top: 70px;
+    }
+
+    .dev {
+        max-width: 500px;
+    }
+
+    .image-iphone {
+        right: 0px;
+        bottom: -70px;
+    }
+
+    /*Employment*/
+
+    .emp {
+        margin-top: 50px;
+    }
+
+    .emp-item {
+        width: 100%;
+    }
+
+    .emp-item:first-child {
+        display: none;
+    }
+
+    /*Feedback*/
+    .feedback {
+        margin-top: 60px
+    }
+
+    .fdbck {
+        padding: 50px 60px;
+    }
+
+    .feedback-icon {
+        display: none;
+    }
+
+    /*Team*/
+    .team {
+        margin-top: 60px;
+    }
+
+    /*Brand*/
+    .brand-partners {
+        margin-top: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1319,10 +1394,6 @@ hr {
     .card-image img {
         width: 320px;
     }
-
-    .card-image.card-image-second img {
-        height: 390px;
-    }
     
     /*Statistics*/
     .statistics {
@@ -1345,6 +1416,62 @@ hr {
 
     .stat-text {
         font-size: 12px;
+    }
+
+    /*Services*/
+    .services {
+        margin-bottom: 0;
+    }
+
+     /*Devices*/
+     .devices {
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+
+     .dev {
+        max-width: 400px;
+    }
+
+    .image-iphone {
+        bottom: -50px;
+    }
+
+    /*Employment*/
+
+    .emp {
+        margin-top: 30px;
+    }
+
+    /*Feedback*/
+    .feedback {
+        margin-top: 30px
+    }
+
+    .fdbck {
+        padding: 30px;
+    }
+
+    .fdbck:after {
+        right: 5px;
+    }
+
+    .fdbck:before {
+        left: 5px;
+    }
+
+    .feedback-icon {
+        display: none;
+    }
+
+    /*Team*/
+    .team {
+        margin-top: 40px;
+    }
+
+    /*Brand*/
+    .brand-partners {
+        margin-top: 60px;
     }
 }
 
@@ -1380,10 +1507,6 @@ hr {
         width: 290px;
     }
 
-    .card-image.card-image-second img {
-        height: 360px;
-    }
-
     /*Statistics*/
     .statistics {
         margin-bottom: 40px;
@@ -1395,5 +1518,10 @@ hr {
 
     .stat-text {
         font-size: 10px;
+    }
+
+    /*Brand*/
+    .brand-partners {
+        margin-top: 30px;
     }
 }
