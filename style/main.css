@@ -691,12 +691,12 @@ hr {
 
 .work-inner {
     display: flex;
-    max-width: 100%;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
 .work-block {
-    flex: 1 1 0;
+    width: 25%;
 }
 
 .work-item {
@@ -709,6 +709,7 @@ hr {
     transition: opacity .2s linear;
     display: block;
     max-width: 100%;
+    width: 100%;
 }
 
 .work-item:hover .work-img {
@@ -1232,6 +1233,19 @@ hr {
     .brand-partners {
         margin-top: 120px;
     }
+
+    /*Work*/
+    .work {
+        margin-top: 85px;
+    }
+
+    .work-inner {
+        margin-top: 75px;
+    }
+
+    .work-block {
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1353,6 +1367,15 @@ hr {
     .brand-partners {
         margin-top: 80px;
     }
+
+    /*Work*/
+    .work {
+        margin-top: 60px;
+    }
+
+    .work-inner {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1472,6 +1495,19 @@ hr {
     /*Brand*/
     .brand-partners {
         margin-top: 60px;
+    }
+
+    /*Work*/
+    .work {
+        margin-top: 50px;
+    }
+
+    .work-inner {
+        margin-top: 40px;
+    }
+
+    .work-block {
+        width: 100%;
     }
 }
 
