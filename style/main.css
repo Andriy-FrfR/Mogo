@@ -266,6 +266,14 @@ hr {
     margin-top: 100px;
 }
 
+.card-item {
+    margin-right: 15px;
+}
+
+.card-item:last-child {
+    margin-right: 0;
+}
+
 .aboutus .card-item {
     background-color: #95e1d3;
     position: relative;
@@ -820,15 +828,16 @@ hr {
 }
 
 .stories-inner {
-    margin-top: 45px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 45px;
+    padding-left: 20px;
 }
 
 .stories-item {
-    flex: 1 1 0;
-    max-width: 380px;
+    width: 33.333333%;
+    padding-right: 20px;
 }
 
 .stories-title {
@@ -852,6 +861,7 @@ hr {
 
 .stories-box img {
     display: block;
+    max-width: 100%;
 }
 
 .stories-date {
@@ -928,8 +938,8 @@ hr {
 
 .footer-inner {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 70px;
 }
 
@@ -970,12 +980,12 @@ hr {
 .footer-social {
     width: 100%;
     margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .footer-social-header {
     color: #333333;
     font-size: 14px;
-    margin-top: 50px;
     padding-bottom: 19px;
 }
 
@@ -1058,6 +1068,8 @@ hr {
 .blogs-img {
     display: block;
     margin-right: 20px;
+    max-height: 86px;
+    margin: auto 20px auto 0;
 }
 
 .blogs-content {
@@ -1091,11 +1103,13 @@ hr {
 }
 
 .inst-item {
-    width: 31.5%;
+    width: 33.33333333%;
     border-bottom: #fff 2px solid; 
+    border-right: #fff 2px solid;
 }
 
 .inst img {
+    max-width: 100%;
     display: block;
 }
 
@@ -1155,6 +1169,11 @@ hr {
     .brand-partners {
         margin-top: 160px;
     }
+
+    /*Stories*/
+    .stories {
+        margin: 90px auto 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1194,7 +1213,7 @@ hr {
 
     .stat-item {
         flex: none;
-        min-width: 33.3333%;
+        width: 33.3333%;
         border: 0;
         padding: 40px 0;
     }
@@ -1246,6 +1265,67 @@ hr {
 
     .work-block {
         width: 50%;
+    }
+
+    /*Stories*/
+    .stories {
+        margin: 70px auto 0;
+    }
+
+    /*Map*/
+    .map {
+        margin-top: 80px;
+    }
+
+    /*Footer*/
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer-col-first {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer-social {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .subscribe {
+        margin: 0 auto;
+    }
+
+    .footer-col-second {
+        width: 50%;
+    }
+
+    .footer-title {
+        margin-bottom: 30px;
+    }
+
+
+    .footer-col-third {
+        width: 50%;
+    }
+
+    /*Blogs*/
+    .blogs-content {
+        padding-right: 15px;
+    }
+
+    /*Blogs*/
+    .blogs-item {
+        margin-bottom: 15px;
+    }
+
+    /*Instagram*/
+    .inst {
+        justify-content: flex-start;
+    }
+
+    .inst-item {
+        width: auto;
     }
 }
 
@@ -1400,6 +1480,47 @@ hr {
 
     .reviews-item img {
         left: 15px;
+    }
+
+    /*Stories*/
+    .stories {
+        max-width: 380px;
+        margin: 60px auto 0;
+    }
+
+    .stories-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stories-item {
+        margin-bottom: 30px;
+    }
+
+    /*Map*/
+    .map {
+        margin-top: 60px;
+    }
+
+    /*Footer*/
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer-inner {
+        padding-bottom: 50px;
+    }
+
+    .footer-col-second {
+        width: 100%;
+    }
+
+    .footer-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-col-third {
+        width: 100%;
     }
 }
 
@@ -1566,6 +1687,52 @@ hr {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    /*Stories*/
+    .stories {
+        margin: 40px auto 0;
+    }
+
+    .stories-inner {
+        margin-top: 25px;
+    }
+
+    /*Map*/
+    .map {
+        margin-top: 40px;
+    }
+    
+    /*Footer*/
+    .footer-logo {
+        font-size: 38px
+    }
+
+    .footer-social {
+       margin: 20px 0; 
+    }
+
+    .footer-social-content a {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    /*Subscribe*/
+    .subscribe {
+        flex-wrap: wrap;
+    }
+
+    .subscribe-input {
+        width: 100%;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+
+    /*Footer*/
+    .footer-inner {
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1628,5 +1795,10 @@ hr {
         text-align: center;
         margin-top: 20px;
         padding: 0;
+    }
+
+    /*Map*/
+    .map {
+        margin-top: 20px;
     }
 }
