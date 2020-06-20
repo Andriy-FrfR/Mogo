@@ -264,19 +264,13 @@ hr {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 100px;
+    margin: 100px 0 0 -20px;
 }
 
 .card-item {
-    margin-right: 15px;
-}
-
-.card-item:last-child {
-    margin-right: 0;
-}
-
-.aboutus .card-item {
-    background-color: #95e1d3;
-    position: relative;
+    width: 33.333333%;
+    max-width: 400px;
+    padding: 0 0 0 20px;
 }
 
 .card-inner {
@@ -284,15 +278,15 @@ hr {
     position: relative;
 }
 
-.card-item:hover .card-image{
+.card-inner:hover .card-image{
     transform: translate3d(-10px, -10px, 0);
 }
 
-.card-item:hover .card-image img {
+.card-inner:hover .card-image img {
     opacity: 0.1;
 }
 
-.card-item:hover .card-item-text{
+.card-inner:hover .card-item-text{
     opacity: 1;
 }
 
@@ -318,15 +312,16 @@ hr {
 }
 
 .card-image {
+    display: block;
     background: linear-gradient(to bottom,
      #f38181, #fce38a);
-     transition: transform .1s linear; 
+    transition: transform .1s linear; 
 }
 
 .card-image img {
     display: block;
     transition: opacity .1s linear;
-    width: 380px;
+    max-width: 100%;
 }
 
 .card-item-text {
@@ -583,7 +578,7 @@ hr {
     cursor: pointer;
 }
 
-.feedback-icon {
+.feedback-icon-inner {
     position: absolute;
     top: 50%;
     left: 110px;
@@ -592,10 +587,10 @@ hr {
     padding: 40px;
 }
 
-.feedback-icon.second-feedback {
+.feedback-icon-inner.second-feedback {
     border: 0;
-    left: 70px;
     padding: 0;
+    left: 70px;
  }
  
 .feedback-content {
@@ -1167,7 +1162,7 @@ hr {
 
     /*Brand*/
     .brand-partners {
-        margin-top: 160px;
+        margin-top: 140px;
     }
 
     /*Stories*/
@@ -1251,7 +1246,7 @@ hr {
     
     /*Brand*/
     .brand-partners {
-        margin-top: 120px;
+        margin-top: 100px;
     }
 
     /*Work*/
@@ -1372,6 +1367,11 @@ hr {
         margin-top: 30px;
     }
 
+    .card-item {
+        width: 100%;
+        max-width: 380px;
+    }
+
     /*Statistics*/
     .statistics {
         margin-bottom: 60px;
@@ -1432,11 +1432,18 @@ hr {
     }
 
     .fdbck {
-        padding: 50px 60px;
+        padding: 30px 60px 50px;
     }
 
     .feedback-icon {
-        display: none;
+        text-align: center;
+        margin: 0 0 15px;
+    }
+
+    .feedback-icon-inner {
+        position: static;
+        display: inline-block;
+        transform: translateY(0);
     }
 
     /*Team*/
@@ -1447,6 +1454,11 @@ hr {
     /*Brand*/
     .brand-partners {
         margin-top: 80px;
+    }
+
+    .brand-item {
+        flex: none;
+        width: 33.33333%;
     }
 
     /*Work*/
@@ -1558,11 +1570,6 @@ hr {
     .section-header-text {
         margin-top: 25px;
     }
-
-    /*Card*/
-    .card-image img {
-        width: 320px;
-    }
     
     /*Statistics*/
     .statistics {
@@ -1629,8 +1636,8 @@ hr {
         left: 5px;
     }
 
-    .feedback-icon {
-        display: none;
+    .feedback-icon-inner {
+        padding: 30px;
     }
 
     /*Team*/
@@ -1641,6 +1648,10 @@ hr {
     /*Brand*/
     .brand-partners {
         margin-top: 60px;
+    }
+
+    .brand-item {
+        width: 50%;
     }
 
     /*Work*/
@@ -1760,11 +1771,6 @@ hr {
 
     .section-header-text {
         margin-top: 20px;
-    }
-
-    /*Card*/
-    .card-image img {
-        width: 290px;
     }
 
     /*Statistics*/
