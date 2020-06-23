@@ -849,7 +849,7 @@ hr {
     margin-top: 60px;
     padding-top: 110px;
     padding-bottom: 130px;
-    background: url(/images/reviews-backgound.png);
+    background: url(../images/reviews-backgound.png);
     background-size: cover;
 }
 
@@ -992,7 +992,7 @@ hr {
 
 .map {
     margin-top: 115px;
-    background: url(/images/map-background.png);
+    background: url(../images/map-background.png);
     padding: 77px;
 }
 
