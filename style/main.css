@@ -573,7 +573,7 @@ hr {
 
 .accordion.active
 .accordion-header:after {
-    transform: rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
 
