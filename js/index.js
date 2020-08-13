@@ -23,3 +23,19 @@ function empHandler(event) {
 
     target.classList.toggle('active');
 }
+
+nav.addEventListener('click', navHandler);
+
+let activeLink
+
+function navHandler(event) {
+    let target = event.target.closest('.nav__link');
+
+    if (!target) return;
+
+    if (activeLink) activeLink.classList.remove('active');
+
+    target.classList.toggle('active');
+
+    activeLink = target;
+}
